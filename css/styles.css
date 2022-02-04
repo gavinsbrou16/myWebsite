@@ -1,5 +1,6 @@
 body {
   background-color: #B1D0E0;
+  margin: 0;
 }
 
 hr {
@@ -11,8 +12,30 @@ hr {
 
 h1 {
   color: #1A374D;
+  margin-top: 0;
 }
 
 h3 {
   color: #1A374D;
+}
+.education {
+  padding-left: 20px;
+}
+
+.work-experience {
+  padding-left: 20px;
+}
+
+.skills {
+  padding-left: 20px;
+}
+
+.programming-languages {
+  padding-left: 20px;
+}
+
+.footer {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 20px;
 }
