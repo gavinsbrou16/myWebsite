@@ -1,7 +1,8 @@
 var selected;
 
 function setup(){
-createCanvas(1000,1500);
+createCanvas(windowWidth,windowHeight/1.2);
+background('#B1D0E0');
 selected = color('red');
 }
 
@@ -36,7 +37,7 @@ fill(255);
 rect(0,400,50,50);
 //black
 fill(0);
-rect(0,4500,50,50);
+rect(0,450,50,50);
 
 strokeWeight(5);
 stroke(selected);
