@@ -25,7 +25,7 @@ fill(0,255,255);
 rect(0,200,50,50);
 //blue
 fill(0,0,255);
-rect(0,250,50,25);
+rect(0,250,50,50);
 //magenta
 fill(255,0,255);
 rect(0,300,50,50);
@@ -54,23 +54,23 @@ function mousePressed (){
 
   if(collide(0, 0)){
     selected = color('red')
-  }else if(collide(0, 20)){
+  }else if(collide(0, 50)){
     selected = color('orange');
-  }else if(collide(0, 40)){
-    selected = color("yellow");
-  }else if(collide(0, 60)){
-    selected = color("rgb(0,255,0)");
-  }else if(collide(0, 80)){
-    selected = color("rgb(0,255,255)");
   }else if(collide(0, 100)){
+    selected = color("yellow");
+  }else if(collide(0, 150)){
+    selected = color("rgb(0,255,0)");
+  }else if(collide(0, 200)){
+    selected = color("rgb(0,255,255)");
+  }else if(collide(0, 250)){
     selected = color("blue");
-  }else if(collide(0, 120)){
+  }else if(collide(0, 300)){
     selected = color("magenta");
-  }else if(collide(0, 140)){
+  }else if(collide(0, 350)){
     selected = color("brown");
-  }else if(collide(0, 160)){
+  }else if(collide(0, 400)){
     selected = color("white");
-  }else if(collide(0, 180)){
+  }else if(collide(0, 450)){
     selected = color("black");
   }
 }
@@ -78,9 +78,9 @@ function mousePressed (){
 function collide ( x, y) {
 //2d
 if (mouseX >= x &&         // right of the left edge AND
-    mouseX <= x + 20 &&    // left of the right edge AND
+    mouseX <= x + 50 &&    // left of the right edge AND
     mouseY >= y &&         // below the top AND
-    mouseY <= y + 20) {    // above the bottom
+    mouseY <= y + 50) {    // above the bottom
         return true;
 }
 return false;
